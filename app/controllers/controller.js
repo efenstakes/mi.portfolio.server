@@ -36,8 +36,8 @@ exports.contact_me = (req, res)=>{
     try {
         var transporter = nodemailer.createTransport({
             //   service: 'gmail',
-            host: 'smtp.gmail.com',
-            // host: "smtp-mail.outlook.com", // hostname
+            // host: 'smtp.gmail.com',
+            host: "smtp-mail.outlook.com", // hostname
             secureConnection: false, // TLS requires secureConnection to be false
             tls: {
                 ciphers:'SSLv3'
