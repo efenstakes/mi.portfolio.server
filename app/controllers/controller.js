@@ -46,8 +46,8 @@ exports.contact_me = (req, res)=>{
             secure: false,
             requireTLS: true,
             auth: {
-                user: 'hypemap.co@gmail.com',  // 'dev.tests@outlook.com', // 
-                pass: 'cerami@11056', //'pwdForDevTests@101', // 
+                user: 'dev.tests@outlook.com', // 'hypemap.co@gmail.com', 
+                pass: 'pwdForDevTests@101', // 'cerami@11056'
             }
         });
         var mailOptions = {
