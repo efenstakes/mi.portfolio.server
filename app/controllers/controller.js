@@ -61,14 +61,14 @@ exports.contact_me = (req, res)=>{
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
               console.log('transporter.sendMail ', error);
-              return res.json({ ...responze, error })
+              return res.status(500).json({ ...responze, error })
             } else {
               console.log('Email sent: ' + info.response);
               return res.json({ send: true })
             }
         });
     } catch (error) {
-        return res.json({ ...responze, error })
+        return res.status(500).json({ ...responze, error })
     }
 
 }
